@@ -1,0 +1,43 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 2450AT18A100E
+D Chip antenna, 2.4GHz
+K antenna, 2.4ghz
+$ENDCMP
+#
+$CMP AAT3681
+D Battery charger, 4.2V lipo
+K lipo, charger
+$ENDCMP
+#
+$CMP ABM8_crystal
+D Crystal, 16.0000MHz, 2.5x3.2mm
+K crystal, 16mhz
+$ENDCMP
+#
+$CMP MMA8653FCR1
+D +/-2,4,8g accelerometer, I2C, DFN-10
+K accelerometer, dfn
+$ENDCMP
+#
+$CMP PIC16LF18323
+D Microcontroller, 8-bit, UQFN-20
+K pic, microcontroller, uqfn
+$ENDCMP
+#
+$CMP SPDT
+D SPDT switch
+K switch, spdt
+$ENDCMP
+#
+$CMP TC1015-2.8V
+D LDO, 2.8V, 100mA, SOT23-5
+K ldo, 2.8v, sot23
+$ENDCMP
+#
+$CMP nRF24L01+
+D RF transceiver, 2.4GHz, VFQFN-20
+K radio, transceiver, vfqfn
+$ENDCMP
+#
+#End Doc Library

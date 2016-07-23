@@ -1,7 +1,0 @@
-EESchema-DOCLIB  Version 2.0
-#
-$CMP nRF24L01+
-D nRF24L01+ RF Transceiver
-$ENDCMP
-#
-#End Doc Library

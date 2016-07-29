@@ -1922,7 +1922,7 @@
     (fp_line (start -1.99136 3.18008) (end -2.35204 3.05054) (layer F.Cu) (width 0.381))
   )
 
-  (gr_text "mFM-Tx R1.0" (at 122.5 88.5 60) (layer F.SilkS)
+  (gr_text mFM-Tx (at 123.15 88.2) (layer F.SilkS)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
   (gr_text tapr.org/OHL (at 161.25 88.1 300) (layer F.SilkS)

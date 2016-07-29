@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:mFM-Rx-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -28,20 +27,20 @@ LIBS:siliconi
 LIBS:opto
 LIBS:atmel
 LIBS:contrib
-LIBS:nrf24l01+
 LIBS:valves
+LIBS:mFM_comp
 LIBS:mFM-Rx-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
+Title "musicFromMotion Receiver"
+Date "2016-07-22"
+Rev "A"
 Comp ""
-Comment1 ""
-Comment2 ""
+Comment1 "By Calvin A. Cherry >> ccherry@riseup.net"
+Comment2 "Released under the TAPR Open Hardware License >> http://tapr.org/ohl.html"
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -81,12 +80,12 @@ $EndComp
 $Comp
 L nRF24L01+ U1
 U 1 1 576F0F3B
-P 5100 2850
-F 0 "U1" H 4700 2450 60  0000 C CNN
-F 1 "nRF24L01+" H 4350 3250 60  0000 C CNN
-F 2 "mFM:QFN20_4x4" H 5100 2850 60  0001 C CNN
-F 3 "" H 5100 2850 60  0000 C CNN
-	1    5100 2850
+P 5100 2750
+F 0 "U1" H 4700 2250 60  0000 C CNN
+F 1 "nRF24L01+" H 4400 3100 60  0000 C CNN
+F 2 "mFM:QFN20_4x4" H 5100 2750 60  0001 C CNN
+F 3 "" H 5100 2750 60  0000 C CNN
+	1    5100 2750
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -493,27 +492,15 @@ Connection ~ 7500 2750
 Wire Wire Line
 	5100 3450 5750 3450
 Wire Wire Line
-	5750 4050 5750 2650
+	5750 2650 5750 4050
 Connection ~ 5100 3450
 Wire Wire Line
-	5200 4050 5750 4050
+	5750 4050 5250 4050
 Connection ~ 5750 3450
-Connection ~ 5300 4050
-$Comp
-L 2450AT18A100E Y2
-U 1 1 5770854B
-P 7500 2450
-F 0 "Y2" H 7600 2350 60  0000 C CNN
-F 1 "2450AT18A100E" H 7500 2850 60  0000 C CNN
-F 2 "" H 7500 2450 60  0000 C CNN
-F 3 "" H 7500 2450 60  0000 C CNN
-	1    7500 2450
-	1    0    0    -1  
-$EndComp
 Connection ~ 5050 3900
 Wire Wire Line
-	4700 2200 4700 2100
-Connection ~ 4700 2100
+	4750 2200 4750 2100
+Connection ~ 4750 2100
 Wire Wire Line
 	4450 2850 3600 2850
 Wire Wire Line
@@ -554,4 +541,19 @@ Wire Wire Line
 	3600 2950 3650 2950
 Wire Wire Line
 	3650 2950 3650 2350
+$Comp
+L 2450AT18A100E Y2
+U 1 1 5792D858
+P 7500 2450
+F 0 "Y2" H 7600 2300 60  0000 C CNN
+F 1 "2450AT18A100E" H 7500 2600 60  0000 C CNN
+F 2 "" H 7500 2450 60  0000 C CNN
+F 3 "" H 7500 2450 60  0000 C CNN
+	1    7500 2450
+	1    0    0    -1  
+$EndComp
+Text Notes 7280 7250 0    60   ~ 0
+1
+Text Notes 7380 7250 0    60   ~ 0
+1
 $EndSCHEMATC

@@ -34,7 +34,7 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "musicFromMotion"
+Title "musicFromMotion Transmitter (Tx)"
 Date "2016-07-22"
 Rev "A"
 Comp ""
@@ -974,10 +974,6 @@ F 3 "" H 9100 4650 50  0000 C CNN
 	1    9100 4650
 	1    0    0    -1  
 $EndComp
-Text Notes 7280 7250 0    60   ~ 0
-1
-Text Notes 7380 7250 0    60   ~ 0
-1
 $Comp
 L R R11
 U 1 1 579812EA

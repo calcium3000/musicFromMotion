@@ -1,4 +1,4 @@
-update=Fri 22 Jul 2016 05:20:44 PM CDT
+update=Fri 29 Jul 2016 11:14:01 PM CDT
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,8 +23,6 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
-[general]
-version=1
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
@@ -69,3 +67,5 @@ LibName27=atmel
 LibName28=contrib
 LibName29=valves
 LibName30=/home/calcium/Documents/mFM/musicFromMotion/mFM_comp
+[general]
+version=1

@@ -5,9 +5,7 @@ See https://calcium3000.wordpress.com/projects/mfm for more information on the p
 
 
 ## mFM-Rx
-This is the receiver module with which all transmitter nodes communicate.  It consists of a small breakout board for the nRF24L01+ transceiver IC that plugs directly into the SPI0 bus of a Raspberry Pi (all models).  A chip antenna replaces the need for a PCB type.
-
-WARNING: Unlike some related breakout boards, this one does not come fitted with a voltage regulator.  Therefore the supplied voltage must never exceed the nRF24L01+'s limits of -0.3V to 3.6V.
+This is the receiver module with which all transmitter nodes communicate.  It consists of a small breakout board for a mini nRF24L01+ transceiver module that plugs directly into the SPI0 bus of a Raspberry Pi (all models).
 
 This module is used in conjunction with TMRh20's RF24 library (see https://github.com/TMRh20/RF24).
 

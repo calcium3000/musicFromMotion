@@ -15,14 +15,39 @@ D Crystal, 16.0000MHz, 2.5x3.2mm
 K crystal, 16mhz
 $ENDCMP
 #
+$CMP MCP73832
+D Battery charger, 4.2V lipo
+K lipo, charger
+$ENDCMP
+#
+$CMP MMA8452
+D +/-2,4,8g accelerometer, I2C, DFN-10
+K accelerometer, dfn
+$ENDCMP
+#
+$CMP MMA8653
+D +/-2,4,8g accelerometer, I2C, DFN-10
+K accelerometer, dfn
+$ENDCMP
+#
 $CMP MMA8653FCR1
 D +/-2,4,8g accelerometer, I2C, DFN-10
 K accelerometer, dfn
 $ENDCMP
 #
+$CMP NRF24L01P_MINI
+D 2.4GHz transceiver module
+K radio transceiver 2.4ghz nordic
+$ENDCMP
+#
 $CMP PIC16LF18323
 D Microcontroller, 8-bit, UQFN-20
 K pic, microcontroller, uqfn
+$ENDCMP
+#
+$CMP PIC16LF18323_TSSOP
+D Microcontroller, 8-bit, TSSOP-14
+K pic, microcontroller, tssop
 $ENDCMP
 #
 $CMP SPDT
@@ -33,6 +58,16 @@ $ENDCMP
 $CMP TC1015-2.8V
 D LDO, 2.8V, 100mA, SOT23-5
 K ldo, 2.8v, sot23
+$ENDCMP
+#
+$CMP USB_MICRO_B
+D USB micro type B connector
+K connector USB USB_OTG USB_micro
+$ENDCMP
+#
+$CMP USB_OTG
+D USB micro/mini connector
+K connector USB USB_OTG USB_mini USB_micro
 $ENDCMP
 #
 $CMP nRF24L01+

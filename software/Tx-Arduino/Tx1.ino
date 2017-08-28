@@ -1,7 +1,7 @@
 /*
- * Rx_GUI.cpp
+ * Tx1.ino
  * 
- * Copyright 2017  Calvin A. Cherry (calvincherry@mail.com)
+ * Copyright 2017  Calvin A. Cherry (calvincherry@gmail.com)
  * 
  * RF24 library courtesy of TMRh20.
  * http://tmrh20.github.io/RF24
@@ -13,7 +13,42 @@
  * https://provideyourown.com/2012/secret-arduino-voltmeter-measure-battery-voltage
  * 
  * Use:
+ *   This Tx controller was built around an Arduino Pro Mini 3.3V.  An ADXL335
+ *   3-axis accelerometer module -- 5-pin version, with ST pin next to the IC -- 
+ *   serves as the motion sensor, while a mini nRF24L01+ transceiver module
+ *   communicates with the Rx on a Raspberry Pi.  Both the accelerometer and
+ *   transceiver (radio) are attached in a mezzanine fashion atop the Arduino
+ *   with the pinouts as such:
+ *
+ *   Arduino | ADXL335
+ *   --------+--------
+ *   VCC     | VCC
+ *   A3      | X_OUT
+ *   A2      | Y_OUT
+ *   A1      | Z_OUT
+ *   A0*     | GND
+ *   
+ *   Arduino | nRF24L01+
+ *   --------+----------
+ *   VCC**   | +3.3V
+ *   D6*     | GND
+ *   D9      | CE
+ *   D8      | CSN
+ *   D13     | SCK
+ *   D11     | MOSI
+ *   D12     | MISO
+ *   NC      | IRQ
  * 
+ *   *Pin is set to output low in software to act as a ground.
+ *   **Soldered to same VCC pin as the ADXL335.
+ *   
+ *   An LIR2450 coin cell battery and inline SPST switch are connected to
+ *   the RAW and GND pins of the Arduino.  Also, a 5-pin female header is
+ *   connected to the GRN, TX, RX, VCC, and GND pins for programming.
+ *   
+ *   A few items must also be removed: the power LED indicator, the LED
+ *   connected to pin 13 (SCK), and the reset button.  For the LEDs, it
+ *   suffices to remove the inline resistors instead.
  * 
  * 
  * This program is free software; you can redistribute it and/or modify
@@ -36,7 +71,6 @@
 #include <SPI.h>
 #include <LowPower.h>
 #include <RF24.h>
-
 
 #define ACTING_GROUND_1     A0
 #define ACTING_GROUND_2     6

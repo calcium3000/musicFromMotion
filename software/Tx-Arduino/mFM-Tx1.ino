@@ -1,7 +1,8 @@
 /*
- * Tx1.ino
+ * mFM-Tx1.ino
  * 
  * Copyright 2017  Calvin A. Cherry (calvincherry@gmail.com)
+ *                 calcium3000.wordpress.com
  * 
  * RF24 library courtesy of TMRh20.
  * http://tmrh20.github.io/RF24
@@ -65,7 +66,6 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
  * MA 02110-1301, USA.
- * 
  */
 
 #include <SPI.h>

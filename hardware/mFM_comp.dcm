@@ -1,5 +1,13 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP +VDD
+K POWER, PWR
+$ENDCMP
+#
+$CMP +VUSB
+K POWER, PWR
+$ENDCMP
+#
 $CMP 2450AT18A100E
 D Chip antenna, 2.4GHz
 K antenna, 2.4ghz
@@ -13,6 +21,47 @@ $ENDCMP
 $CMP ABM8_crystal
 D Crystal, 16.0000MHz, 2.5x3.2mm
 K crystal, 16mhz
+$ENDCMP
+#
+$CMP ATmega368P-AU
+D TQFP32, 16k Flash, 1kB SRAM, 512B EEPROM
+K AVR 8bit Microcontroller MegaAVR
+F http://www.atmel.com/images/atmel-8271-8-bit-avr-microcontroller-atmega48a-48pa-88a-88pa-168a-168pa-328-328p_datasheet.pdf
+$ENDCMP
+#
+$CMP Header_1x1
+D Header, single row, 1x1
+K header 1x1
+$ENDCMP
+#
+$CMP Header_1x2
+D Header, single row, 1x2
+K header 1x2
+$ENDCMP
+#
+$CMP Header_1x5
+D Header, single row, 1x5
+K header 1x5
+$ENDCMP
+#
+$CMP Header_1x6
+D Header, single row, 1x6
+K header 1x6
+$ENDCMP
+#
+$CMP Header_1x8
+D header, single row, 1x8
+K header 1x8
+$ENDCMP
+#
+$CMP Header_1x9
+D header, single row, 1x9
+K header 1x9
+$ENDCMP
+#
+$CMP Header_2x3
+D Header, double row, 2x3
+K header 2x3
 $ENDCMP
 #
 $CMP MCP73832
@@ -56,8 +105,8 @@ K switch, spdt
 $ENDCMP
 #
 $CMP TC1015-2.8V
-D LDO, 2.8V, 100mA, SOT23-5
-K ldo, 2.8v, sot23
+D LDO, 2.8V, 100mA
+K ldo 2.8v 100ma
 $ENDCMP
 #
 $CMP USB_MICRO_B
@@ -68,6 +117,11 @@ $ENDCMP
 $CMP USB_OTG
 D USB micro/mini connector
 K connector USB USB_OTG USB_mini USB_micro
+$ENDCMP
+#
+$CMP USB_micro_B
+D USB micro type B connector
+K connector USB USB_OTG USB_micro
 $ENDCMP
 #
 $CMP nRF24L01+

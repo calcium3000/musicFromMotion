@@ -1,4 +1,4 @@
-update=Mon 15 May 2017 06:48:28 AM MDT
+update=Wednesday, September 27, 2017 'PMt' 07:10:55 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=
+LibDir=../../hardware
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -58,4 +58,4 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-LibName30=/home/calcium3000/Projects/musicFromMotion/mFM_comp
+LibName30=mFM_comp

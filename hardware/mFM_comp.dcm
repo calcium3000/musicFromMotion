@@ -69,6 +69,11 @@ D Battery charger, 4.2V lipo
 K lipo, charger
 $ENDCMP
 #
+$CMP MIC5205-3.3
+D 150 mA Low Dropout Voltage Regulator, 3.3V
+K regulator ldo 3.3v
+$ENDCMP
+#
 $CMP MMA8452
 D +/-2,4,8g accelerometer, I2C, DFN-10
 K accelerometer, dfn

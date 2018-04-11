@@ -12,7 +12,7 @@ This module is used in conjunction with TMRh20's RF24 library (see https://githu
 
 
 ### mFM-Tx
-Behold the transmitter modules -- the lustrous face of mFM.  Each module consists of a battery and related circuitry (charger via USB, LDO voltage regulator), a radio transceiver, an accelerometer, and a microcontroller.
+Behold the transmitter modules -- the lustrous face of mFM.  Each module consists of a battery, a voltage regulator, a radio transceiver, an accelerometer, and a microcontroller.
 
 When the Rx node pings a Tx node, it reads it accelerometer value and battery status (good or low), sends it back to the Rx node, and takes a quick nap while the other nodes are being pinged.  If the battery voltage is too low the module will sleep until the battery is recharged.
 
